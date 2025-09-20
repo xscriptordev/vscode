@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <rect width="24" height="24" rx="2" fill="#444444"/>
+  <g fill="white">
+    <path d="M6 6l4 4-4 4M10 18h8M14 6v12" stroke="white" stroke-width="1.5" fill="none"/>
+    <circle cx="8" cy="10" r="0.5" fill="white"/>
+    <circle cx="16" cy="10" r="0.5" fill="white"/>
+    <text x="12" y="22" text-anchor="middle" fill="white" font-family="monospace" font-size="6" font-weight="bold">XML</text>
+  </g>
+</svg>

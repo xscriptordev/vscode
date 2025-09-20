@@ -1,0 +1,28 @@
+{
+  "glassit.alpha": 235,
+  "workbench.activityBar.location": "top",
+  "workbench.sideBar.location": "right",
+  "files.autoSave": "afterDelay",
+  "telemetry.feedback.enabled": false,
+  "telemetry.telemetryLevel": "off",
+  "terminal.integrated.suggest.enabled": true,
+  "editor.linkedEditing": true,
+  "editor.cursorBlinking": "expand",
+  "telemetry.editStats.enabled": false,
+  "workbench.iconTheme": "xscriptor-icons",
+  "workbench.colorTheme": "Xscriptor Theme",
+
+  "custom-ui-style.electron": {},
+  "custom-ui-style.watch": true,
+
+  "custom-ui-style.external.imports": [
+    "file:///C:/Users/Xscriptor/.vscode/vscode-styles/rounded.css",
+    "file:///C:/Users/Xscriptor/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js",
+    "file:///C:/Users/Xscriptor/.vscode/vscode-styles/quickcenter.css",
+    "file:///C:/Users/Xscriptor/.vscode/vscode-styles/quickcenter.js"
+  ],
+
+  "animations.Install-Method": "Custom UI Style",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "editor.experimentalGpuAcceleration": "on"
+}

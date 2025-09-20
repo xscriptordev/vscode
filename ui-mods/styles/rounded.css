@@ -1,0 +1,134 @@
+/* ====== Tokens ====== */
+:root {
+  --x-border: var(--vscode-contrastBorder, var(--vscode-panel-border, rgba(128,128,128,0.25)));
+  --x-radius: 10px;
+  --x-radius-tab: 8px;
+  --x-shadow-soft: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+/* ====== TABS redondeadas ====== */
+.monaco-workbench .tabs-container .tab {
+  border-radius: var(--x-radius-tab) var(--x-radius-tab) 0 0 !important;
+  border: 1px solid transparent !important;
+  border-bottom: none !important;
+  margin-right: 4px !important;
+}
+.monaco-workbench .tabs-container .tab.active,
+.monaco-workbench .tabs-container .tab:hover {
+  border-color: var(--x-border) !important;
+}
+
+/* ====== MENÚS contextuales ====== */
+.context-view .monaco-menu {
+  border-radius: var(--x-radius) !important;
+  border: 1px solid var(--x-border) !important;
+  overflow: hidden !important;
+  box-shadow: var(--x-shadow-soft) !important;
+}
+
+/* ====== PANELS / SIDEBAR ====== */
+.monaco-workbench .part.sidebar,
+.monaco-workbench .part.panel {
+  border-radius: var(--x-radius) !important;
+  border: 1px solid var(--x-border) !important;
+  overflow: hidden !important;
+  margin: 4px !important;
+}
+
+/* ====== ACTIVITY BAR ====== */
+.monaco-workbench .part.activitybar {
+  border-radius: var(--x-radius) !important;
+  border: 1px solid var(--x-border) !important;
+  overflow: hidden !important;
+  margin: 4px !important;
+}
+
+/* ====== STATUS BAR ====== */
+.monaco-workbench .part.statusbar {
+  border: 1px solid var(--x-border) !important;
+  border-radius: var(--x-radius) !important;
+  margin: 4px !important;
+  overflow: hidden !important;
+}
+
+/* ====== EDITOR PAGES ====== */
+.monaco-workbench .editor-group-container {
+  border-radius: var(--x-radius) !important;
+  border: 1px solid var(--x-border) !important;
+  overflow: hidden !important;
+  margin: 4px !important;
+  box-shadow: var(--x-shadow-soft) !important;
+}
+
+/* Cuando hay múltiples editores, que cada uno tenga borde */
+.monaco-workbench .editor-group-container > .title.tabs {
+  border-radius: var(--x-radius) var(--x-radius) 0 0 !important;
+  border-bottom: 1px solid var(--x-border) !important;
+}
+.monaco-workbench .editor-group-container > .editor-container {
+  border-radius: 0 0 var(--x-radius) var(--x-radius) !important;
+  border-top: none !important;
+}
+
+/* ====== QUICK PICK / COMMAND PALETTE ====== */
+.quick-input-widget .quick-input-header,
+.monaco-quick-input-widget {
+  border-radius: var(--x-radius) !important;
+  border: 1px solid var(--x-border) !important;
+  overflow: hidden !important;
+  box-shadow: var(--x-shadow-soft) !important;
+}
+
+/* Forzar redondez abajo del área de código */
+.monaco-workbench .editor-group-container > .editor-container {
+  border-bottom-left-radius: var(--x-radius) !important;
+  border-bottom-right-radius: var(--x-radius) !important;
+  border: 1px solid var(--x-border) !important;
+  border-top: none !important;
+  overflow: hidden !important;
+}
+
+
+/* 1) Deja aire alrededor del área de editores */
+.monaco-workbench .part.editor {
+  padding: 6px !important; /* crea hueco con la status bar y el borde del window */
+}
+
+/* 2) Caja del grupo de editores con borde "inset" para que SIEMPRE se vea */
+.monaco-workbench .editor-group-container {
+  border-radius: var(--x-radius) !important;
+  /* El "borde" lo pintamos con un inset-shadow para que no lo tape nada */
+  box-shadow:
+    0 0 0 1px var(--x-border) inset,
+    var(--x-shadow-soft) !important;
+  overflow: hidden !important;
+  background-clip: padding-box !important;
+}
+
+/* 3) Tabs (arriba) siguen redondas y separadas del contenedor */
+.monaco-workbench .editor-group-container > .title.tabs {
+  border-radius: var(--x-radius) var(--x-radius) 0 0 !important;
+  /* quitamos bordes extra para no duplicar línea */
+  border: none !important;
+}
+
+/* 4) Área de contenido (abajo) hereda el radio y no tapa el borde */
+.monaco-workbench .editor-group-container > .editor-container {
+  border-radius: 0 0 var(--x-radius) var(--x-radius) !important;
+  border: none !important;
+  overflow: hidden !important;
+}
+
+/* 5) Asegura el recorte dentro del editor (texto, minimapa, scrolls) */
+.monaco-editor,
+.monaco-editor-background,
+.monaco-editor .overflow-guard,
+.monaco-editor .monaco-scrollable-element {
+  border-radius: 0 0 var(--x-radius) var(--x-radius) !important;
+  overflow: hidden !important;
+}
+
+/* (Opcional) Si el gris del borde es demasiado sutil, súbele un poco: */
+:root {
+  --x-border: rgba(160,160,160,0.35); /* antes 0.25 */
+}

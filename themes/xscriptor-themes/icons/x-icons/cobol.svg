@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <rect width="24" height="24" rx="2" fill="#005CA5"/>
+  <g fill="white" font-family="monospace" font-size="8" font-weight="bold">
+    <text x="12" y="9" text-anchor="middle">COB</text>
+    <text x="12" y="17" text-anchor="middle">OL</text>
+  </g>
+  <rect x="3" y="11" width="18" height="1" fill="white"/>
+</svg>

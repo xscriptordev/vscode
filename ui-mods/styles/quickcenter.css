@@ -1,0 +1,46 @@
+/* ===== Quick Open / Command Palette centrados + estilo ===== */
+
+/* Dim + blur del fondo (capa bajo el widget) */
+.xqk-overlay {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(10px);
+  background: rgba(0,0,0,0.35);
+  z-index: 1500; /* por debajo del widget */
+  pointer-events: none; /* no bloquea clicks en el widget */
+}
+
+/* El propio widget (Quick Input / Palette) */
+.monaco-quick-input-widget,
+.quick-input-widget {
+  position: fixed !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+
+  min-width: 720px !important;     /* ajusta a gusto */
+  max-width: 960px !important;
+  width: 70vw !important;
+
+  border-radius: 12px !important;
+  border: 1px solid rgba(160,160,160,0.35) !important;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.35) !important;
+
+  z-index: 2000 !important; /* por encima del overlay */
+  overflow: hidden !important;
+}
+
+/* Header y lista redondeados/coherentes */
+.quick-input-header {
+  border-bottom: 1px solid rgba(160,160,160,0.25) !important;
+}
+.monaco-list-rows {
+  padding: 4px !important;
+}
+
+/* Opcional: entrada de búsqueda un poco más grande */
+.quick-input-header .monaco-inputbox input {
+  font-size: 14px !important;
+  line-height: 22px !important;
+  padding: 6px 10px !important;
+}
