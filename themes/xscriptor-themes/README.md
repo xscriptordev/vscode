@@ -1,4 +1,4 @@
-# X Themes Collection — Visual Studio Code Theme Pack
+# Xscriptor Themes Collection — Visual Studio Code Theme Pack
 
 A comprehensive collection of 10 carefully crafted themes for Visual Studio Code, designed to enhance your coding experience with diverse color palettes and visual styles. From minimalist dark themes to vibrant neon aesthetics, this pack offers something for every developer's preference.
 
