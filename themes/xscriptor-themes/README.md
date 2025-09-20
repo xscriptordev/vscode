@@ -4,19 +4,19 @@ A comprehensive collection of 10 carefully crafted themes for Visual Studio Code
 
 ## Preview
 <p align="center">
-  <img src="https://raw.githubusercontent.com/xscriptordev/xscriptor-vscode/refs/heads/main/themes/xscriptor-themes/screenshots/xtvsc01.jpg" width="900"/>
+  <img src="https://raw.githubusercontent.com/xscriptordev/vscode/refs/heads/main/themes/xscriptor-themes/screenshots/xtvsc01.jpg" width="900"/>
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/xscriptordev/xscriptor-vscode/refs/heads/main/vscode/themes/xscriptor-themes/screenshots/xtvsc00.jpg" width="900"/>
+  <img src="https://raw.githubusercontent.com/xscriptordev/vscode/refs/heads/main/vscode/themes/xscriptor-themes/screenshots/xtvsc00.jpg" width="900"/>
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/xscriptordev/xscriptor-vscode/refs/heads/main/vscode/themes/xscriptor-themes/screenshots/xtvsc03.jpg" width="900"/>
+  <img src="https://raw.githubusercontent.com/xscriptordev/vscode/refs/heads/main/vscode/themes/xscriptor-themes/screenshots/xtvsc03.jpg" width="900"/>
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/xscriptordev/xscriptor-vscode/refs/heads/main/vscode/themes/xscriptor-themes/screenshots/xtvsc02.jpg" width="900"/>
+  <img src="https://raw.githubusercontent.com/xscriptordev/vscode/refs/heads/main/vscode/themes/xscriptor-themes/screenshots/xtvsc02.jpg" width="900"/>
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/xscriptordev/xscriptor-vscode/refs/heads/main/vscode/themes/xscriptor-themes/screenshots/xtvsc05.jpg" width="900"/>
+  <img src="https://raw.githubusercontent.com/xscriptordev/vscode/refs/heads/main/vscode/themes/xscriptor-themes/screenshots/xtvsc05.jpg" width="900"/>
 </p>
 
 
@@ -182,4 +182,4 @@ This theme collection is released under the MIT License. See [LICENSE](./LICENSE
 **Xscriptor** — Theme Designer & Developer
 
 - GitHub: [@xscriptordev](https://github.com/xscriptordev)
-- Repository: [X Themes Collection](https://github.com/xscriptordev/xscriptor-vscode)
+- Repository: [X Themes Collection](https://github.com/xscriptordev/vscode)
