@@ -1,4 +1,6 @@
-# Xscriptor VSCode
+# Wellcome to Xscriptor VSCode
+
+<p align="center"> <img src="./assets/icon.png" width="200" alt="Xscriptor Theme Dark logo" /> </p>
 
 Essential settings and customizations to improve accessibility and personalization of Visual Studio Code using the Xscriptor ecosystem (themes, snippets, UI mods).
 
