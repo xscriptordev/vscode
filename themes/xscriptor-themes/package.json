@@ -2,7 +2,7 @@
   "name": "xscriptor-themes",
   "displayName": "Xscriptor Themes",
   "description": "Collection of themes for Visual Studio Code by Xscriptor.",
-  "version": "0.0.9",
+  "version": "1.0.0",
   "publisher": "xscriptor",
   "license": "MIT",
   "engines": { "vscode": "^1.70.0" },
@@ -15,23 +15,24 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/xscriptorcode/X",
-    "directory": "vscodethemes/xdarkcolors"
+    "directory": "vscodethemes/xscriptorthemes"
   },
-  "bugs": { "url": "https://github.com/xscriptorcode/X/issues" },
-  "homepage": "https://github.com/xscriptorcode/X/tree/main/general/vscode/themes/xscriptor-themes",
+  "bugs": { "url": "https://github.com/xscriptordev/vscode/issues" },
+  "homepage": "https://github.com/xscriptordev/vscode/themes/xscriptor-themes",
 
   "contributes": {
     "themes": [
-      { "label": "Xscriptor Theme",            "uiTheme": "vs-dark",  "path": "./themes/xscriptor-theme.json" },
-      { "label": "Xscriptor Theme Inverted", "uiTheme": "vs", "path": "./themes/xscriptor-theme-inverted.json" },
+      { "label": "Dark Xscriptor",            "uiTheme": "vs-dark",  "path": "./themes/xscriptor-theme.json" },
+      { "label": "Xscriptor Light", "uiTheme": "vs", "path": "./themes/xscriptor-theme-inverted.json" },
       { "label": "X Dark Colors",        "uiTheme": "vs-dark",  "path": "./themes/xdarkcolors.json" },
-      { "label": "X Tropical Neon",      "uiTheme": "vs-dark",  "path": "./themes/xtropicalneon.json" },
-      { "label": "X Greyscale",          "uiTheme": "vs-dark",  "path": "./themes/xgreyscale.json" },
-      { "label": "X Greyscale Inverted", "uiTheme": "vs", "path": "./themes/xgreyscaleinverted.json" },
-      { "label": "X Nord",               "uiTheme": "vs-dark",  "path": "./themes/xnord.json" },
-      { "label": "X Nord Inverted",      "uiTheme": "vs", "path": "./themes/xnordinverted.json" },
-      { "label": "X Summer Night",       "uiTheme": "vs-dark",  "path": "./themes/xsummernight.json" },
-      { "label": "X Old Tropical Neon",            "uiTheme": "vs-dark",  "path": "./themes/xoldtropicalneon.json" }      
+      { "label": "X Dark Greyscale",          "uiTheme": "vs-dark",  "path": "./themes/xgreyscale.json" },
+      { "label": "X Light Greyscale Inverted", "uiTheme": "vs", "path": "./themes/xgreyscaleinverted.json" },
+      { "label": "X Dark Nord",               "uiTheme": "vs-dark",  "path": "./themes/xnord.json" },
+      { "label": "X Light Nord Inverted",      "uiTheme": "vs", "path": "./themes/xnordinverted.json" },
+      { "label": "X Dark Summer Night",       "uiTheme": "vs-dark",  "path": "./themes/xsummernight.json" },
+      { "label": "X Dark Retro",       "uiTheme": "vs-dark",  "path": "./themes/xretro.json" },
+      { "label": "X Dark Sense",       "uiTheme": "vs-dark",  "path": "./themes/xsense.json" },
+      { "label": "X Dark Persecution",       "uiTheme": "vs-dark",  "path": "./themes/xpersecution.json" }
     ],
     "iconThemes": [
       {
