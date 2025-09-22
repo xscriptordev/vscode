@@ -3,6 +3,17 @@
 All important modifications to this VSCode theme collection will be documented in this file.
 
 ---
+## [1.0.0] - 2025-09-22
+- Big update, added new themes:
+  - X Retro
+  - X Sense
+- Deleted themes:
+  - X Tropical Neon
+  - X Old Tropical Neon
+- Removed high contrast Themes and add new standard Colors.
+- Cursive Consolidation on Xscriptor Theme.
+- Improve Xscriptor Theme, names and colors in general.
+
 ## [0.0.9] - 2025-09-18
 - Update icons: adding persistence in folders.
 - X Plain Text removed, Xgreyscale takes its place.
