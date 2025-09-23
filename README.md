@@ -8,7 +8,8 @@ Essential settings and customizations to improve accessibility and personalizati
 
 This repository is organized into:
 
-- **`themes/`** → Xscriptor Themes for VSCode.  
+- **`themes/`** → Xscriptor Themes for VSCode.
+- **`extensions/`** → Xglass.  
 - **`snippets/`** → Predefined code snippets for JavaScript, TypeScript, React, and more.  
 - **`ui-mods/`** → UI tweaks such as custom icon themes and product icons.  
 - **`assets/`** → Screenshots, previews, and branding files.  

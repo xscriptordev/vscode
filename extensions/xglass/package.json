@@ -1,0 +1,90 @@
+{
+  "name": "xglass",
+  "displayName": "Xglass",
+  "description": "Make of glass your editor",
+  "version": "1.0.0",
+  "publisher": "xscriptor",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "extensionKind": [
+    "ui"
+  ],
+  "categories": [
+    "Themes",
+    "Other"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xscriptordev/vscode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xscriptordev/vscode/issues",
+    "email": "x@xscriptor.com"
+  },
+  "icon": "images/icon.png",
+  "keywords": ["glass", "transparency", "blur", "xscriptor", "colors", "icons", "effects"],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./extension",
+  "contributes": {
+    "configuration": {
+      "title": "xglass configuration",
+      "properties": {
+        "xglass.alpha": {
+          "type": "integer",
+          "default": 200,
+          "description": "Transparency level [1-255]"
+        },
+        "xglass.step": {
+          "type": "integer",
+          "default": 10,
+          "description": "Increment of alpha"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "xglass.increase",
+        "title": "xglass: + transparency"
+      },
+      {
+        "command": "xglass.decrease",
+        "title": "xglass: - transparency"
+      },
+      {
+        "command": "xglass.max",
+        "title": "xglass: full transparency"
+      },
+      {
+        "command": "xglass.min",
+        "title": "xglass: No transparency"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "xglass.increase",
+        "key": "ctrl+alt+z"
+      },
+      {
+        "command": "xglass.decrease",
+        "key": "ctrl+alt+c"
+      },
+      {
+        "command": "xglass.min",
+        "key": "ctrl+alt+x"
+      }
+    ]
+  },
+  "scripts": {},
+  "devDependencies": {},
+  "dependencies": {
+    "node-powershell": "^4.0.0"
+  },
+
+  "files": [
+    "images/*.svf"
+  ]
+}

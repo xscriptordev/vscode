@@ -1,0 +1,21 @@
+# Node dependencies
+node_modules/
+
+# NPM lock file (opcional si no quieres fijar versiones)
+package-lock.json
+
+# VS Code build outputs
+out/
+dist/
+
+# VS Code extension packaging
+*.vsix
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System files
+.DS_Store
+Thumbs.db
