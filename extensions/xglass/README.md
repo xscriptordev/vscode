@@ -30,4 +30,5 @@ sudo pacman -S xorg-xprop
 - `xglass.step`: Step size when adjusting transparency.  
 
 ## More information
-- [GitHub repository](https://github.com/xscriptordev/vscode)  
+- [GitHub repository](https://github.com/xscriptordev/vscode)
+- [License](https://github.com/xscriptordev/vscode/blob/main/extensions/xglass/LICENSE.md)
