@@ -1,6 +1,6 @@
 # XGlass for VS Code
 
-An extension that lets you adjust the transparency of the VS Code window on Windows and Linux.
+An extension that makes your editor looks like glass.
 
 ## Features
 - Change the window transparency using keyboard shortcuts.  
