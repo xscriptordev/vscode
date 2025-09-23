@@ -2,6 +2,8 @@
 
 An extension that makes your editor looks like glass.
 
+![Preview](https://raw.githubusercontent.com/xscriptordev/vscode/main/extensions/xglass/images/preview.png)
+
 ## Features
 - Change the window transparency using keyboard shortcuts.  
 - Configure the level and step size from VS Code settings.
