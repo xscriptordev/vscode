@@ -1,0 +1,460 @@
+/* =========================
+   TOKENS / BASE
+   ========================= */
+:root {
+  /* Paleta Xscriptor */
+  --x-blue:   #5AD4E6;
+  --x-pink:   #FC618D;
+  --x-green:  #7BD88F;
+  --x-yellow: #FCE566;
+  --x-lila:   #948AE3;
+
+  /* Geometría / sombras / gaps */
+  --x-radius: 10px;
+  --x-radius-tab: 8px;
+  --x-gap: 6px; /* aire general 4–8px */
+  --x-shadow-soft: 0 1px 2px rgba(0,0,0,0.08);
+
+  /* Grosor de borde interno */
+  --x-border-w: 1.6px;
+  /* Grosor de borde específico para editor (más delgado) */
+  --x-border-editor: 0.8px;
+}
+
+/* Gap uniforme desde el layout (sin márgenes en partes) */
+.monaco-workbench .layout-grid,
+.monaco-workbench .grid-view-container {
+  padding: var(--x-gap) !important;
+  box-sizing: border-box !important;
+}
+
+/* Reset de márgenes para evitar saltos y recortes */
+.monaco-workbench .part.sidebar,
+.monaco-workbench .part.panel,
+.monaco-workbench .part.activitybar,
+.monaco-workbench .part.statusbar,
+.monaco-workbench .editor-group-container {
+  margin: 0 !important;
+}
+
+/* =========================
+   PARTES PRINCIPALES
+   ========================= */
+
+/* Sidebar → AZUL */
+.monaco-workbench .part.sidebar {
+  border-radius: var(--x-radius) !important;
+  background-clip: padding-box !important;
+  overflow: hidden !important;       /* mantiene radios */
+  padding: 0 !important;             /* padding lo damos al .content */
+  box-shadow:
+    inset 0 0 0 var(--x-border-w) var(--x-blue),
+    var(--x-shadow-soft) !important;
+  box-sizing: border-box !important;
+}
+.monaco-workbench .part.sidebar > .content {
+  padding: var(--x-gap) !important;
+  box-sizing: border-box !important;
+}
+
+/* Activity Bar → VERDE */
+.monaco-workbench .part.activitybar {
+  border-radius: var(--x-radius) !important;
+  background-clip: padding-box !important;
+  overflow: visible !important;
+  padding: var(--x-gap) !important;
+  box-shadow:
+    inset 0 0 0 var(--x-border-w) var(--x-green),
+    var(--x-shadow-soft) !important;
+  box-sizing: border-box !important;
+}
+
+/* Panel inferior → ROSA */
+.monaco-workbench .part.panel {
+  border-radius: var(--x-radius) !important;
+  background-clip: padding-box !important;
+  overflow: hidden !important;     /* conserva radios con contenido */
+  padding: 0 !important;           /* aire en .content */
+  box-shadow:
+    inset 0 0 0 var(--x-border-w) var(--x-pink),
+    var(--x-shadow-soft) !important;
+  box-sizing: border-box !important;
+}
+.monaco-workbench .part.panel > .content {
+  padding: var(--x-gap) !important;
+  box-sizing: border-box !important;
+}
+
+/* Status Bar → AMARILLO (sin hueco extra y sin recortes) */
+.monaco-workbench .part.statusbar {
+  border-radius: var(--x-radius) !important;
+  background-clip: padding-box !important;
+  overflow: visible !important;
+  min-height: 28px !important;
+  padding: 4px 8px !important;      /* aire interno */
+  display: flex !important;
+  align-items: center !important;
+  box-shadow:
+    inset 0 0 0 var(--x-border-w) var(--x-yellow),
+    var(--x-shadow-soft) !important;
+  box-sizing: border-box !important;
+}
+.monaco-workbench .part.statusbar .statusbar-item {
+  padding: 0 8px !important;
+  line-height: 22px !important;
+}
+.monaco-workbench .part.statusbar .statusbar-item .codicon,
+.monaco-workbench .part.statusbar .statusbar-item .statusbar-item-label {
+  display: inline-flex !important;
+  align-items: center !important;
+  height: 22px !important;
+}
+
+/* =========================
+   EDITOR Y TABS
+   ========================= */
+
+/* Grupo de editor → LILA */
+.monaco-workbench .editor-group-container {
+  position: relative !important;    /* para ::after del separador */
+  border-radius: var(--x-radius) !important;
+  background-clip: padding-box !important;
+  overflow: hidden !important;
+  box-shadow:
+    inset 0 0 0 var(--x-border-editor) var(--x-lila),
+    var(--x-shadow-soft) !important;
+}
+
+/* Franja de tabs con borde inferior lila y aire interno */
+.monaco-workbench .editor-group-container > .title.tabs {
+  border: none !important;
+  border-radius: var(--x-radius) var(--x-radius) 0 0 !important;
+  padding: 2px 8px !important;
+  box-sizing: border-box !important;
+  box-shadow: inset 0 -2px 0 var(--x-lila) !important;
+  -webkit-app-region: drag !important; /* zona drag */
+}
+.monaco-workbench .tabs-container .tab,
+.monaco-workbench .title.tabs .actions-container,
+.monaco-workbench .title.tabs .action-item { -webkit-app-region: no-drag !important; }
+
+/* Tabs individuales: minimal + realce en hover/active */
+.monaco-workbench .tabs-container .tab {
+  border: none !important;
+  border-radius: var(--x-radius-tab) var(--x-radius-tab) 0 0 !important;
+  margin-right: 4px !important;
+  box-shadow: inset 0 0 0 1px rgba(148,138,227,0.45) !important; /* lila suave */
+}
+.monaco-workbench .tabs-container .tab:hover,
+.monaco-workbench .tabs-container .tab.active {
+  box-shadow: inset 0 0 0 2px var(--x-lila) !important;
+}
+
+/* Área de contenido del editor: respeta radios y evita solapes */
+.monaco-workbench .editor-group-container > .editor-container {
+  border-radius: 0 0 var(--x-radius) var(--x-radius) !important;
+  border: none !important;
+  overflow: hidden !important;
+}
+.monaco-editor,
+.monaco-editor-background,
+.monaco-editor .overflow-guard,
+.monaco-editor .monaco-scrollable-element {
+  border-radius: 0 0 var(--x-radius) var(--x-radius) !important;
+  overflow: hidden !important;
+}
+
+/* En foco: leve realce (sutil) del grupo de editor */
+.monaco-workbench .editor-group-container:focus-within {
+  box-shadow:
+    inset 0 0 0 var(--x-border-editor) var(--x-lila),
+    0 0 0 2px rgba(148,138,227,0.22),
+    var(--x-shadow-soft) !important;
+}
+
+/* =========================
+   SEPARADORES ENTRE EDITORES
+   ========================= */
+
+/* Sash vertical con pista lila */
+.monaco-sash.vertical {
+  width: 6px !important;                 /* área de agarre cómoda */
+}
+.monaco-sash.vertical::before {
+  content: "";
+  position: absolute;
+  left: 50%; top: 0; transform: translateX(-50%);
+  width: 2px; height: 100%;
+  background: var(--x-lila);
+  opacity: .45;
+  border-radius: calc(var(--x-radius) / 2);
+  pointer-events: none;
+}
+.monaco-sash.vertical:hover::before { opacity: .7; }
+
+/* Línea lila al borde derecho de cada grupo, salvo el último */
+.monaco-workbench .editor-group-container:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  top: 0; right: 0; width: 2px; height: 100%;
+  background: var(--x-lila);
+  opacity: .25;
+  border-radius: calc(var(--x-radius) / 2);
+  pointer-events: none;
+}
+
+/* =========================
+   WIDGETS / MENÚS
+   ========================= */
+
+/* Menús contextuales → AZUL */
+.context-view .monaco-menu {
+  border: none !important;
+  border-radius: var(--x-radius) !important;
+  overflow: hidden !important;
+  background-clip: padding-box !important;
+  box-shadow:
+    inset 0 0 0 var(--x-border-w) var(--x-blue),
+    var(--x-shadow-soft) !important;
+}
+
+/* Quick Pick / Command Palette → LILA */
+.monaco-quick-input-widget,
+.quick-input-widget,
+.quick-input-widget .quick-input-header {
+  border: none !important;
+  border-radius: var(--x-radius) !important;
+  overflow: hidden !important;
+  background-clip: padding-box !important;
+  box-shadow:
+    inset 0 0 0 var(--x-border-w) var(--x-lila),
+    var(--x-shadow-soft) !important;
+}
+
+/* =========================
+   TITLE BAR (opcional ocultarla)
+   ========================= */
+/* Si la ocultas desde settings ("window.titleBarStyle": "custom"),
+   puedes dejar estas reglas activas; si no, coméntalas. */
+.monaco-workbench .part.titlebar,
+.titlebar-container,
+.titlebar {
+  display: none !important;
+  height: 0 !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+/* Altura interna a 0 si existe variable */
+:root { --window-titlebar-height: 0px !important; }
+
+/* Recoloca el contenido hacia arriba (sin hueco) */
+.monaco-workbench .editor > .content,
+.monaco-workbench .part.editor,
+.monaco-workbench .part.sidebar,
+.monaco-workbench .part.panel,
+.monaco-workbench .auxiliarybar {
+  top: 0 !important;
+}
+
+/* En maximizado (Windows) evita franjas fantasma arriba */
+body.maximized .titlebar,
+body.maximized .menubar { display: none !important; height: 0 !important; }
+
+
+/* =========================
+   RADIOS INTERNOS (heredan y recortan bien)
+   ========================= */
+
+/* Sidebar (Explorer, Outline, etc.) */
+.monaco-workbench .part.sidebar > .content,
+.monaco-workbench .part.sidebar > .content :is(.viewpane, .pane, .pane-body, .split-view-view, .monaco-list, .monaco-scrollable-element) {
+  border-radius: calc(var(--x-radius) - 2px) !important;
+  overflow: hidden !important;
+  background-clip: padding-box !important;
+}
+
+/* Explorador de archivos: prevenir desbordamiento y agregar margen derecho */
+.monaco-workbench .part.sidebar .explorer-folders-view,
+.monaco-workbench .part.sidebar .explorer-folders-view .monaco-tree,
+.monaco-workbench .part.sidebar .explorer-folders-view .monaco-list {
+  padding-right: var(--x-gap) !important;
+  margin-right: 2px !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+/* Elementos del árbol de archivos: prevenir desbordamiento de texto largo */
+.monaco-workbench .part.sidebar .explorer-folders-view .monaco-tree-row,
+.monaco-workbench .part.sidebar .explorer-folders-view .monaco-list-row {
+  padding-right: var(--x-gap) !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+/* Panel inferior (Terminal/Output/Problems) */
+.monaco-workbench .part.panel > .content,
+.monaco-workbench .part.panel > .content :is(.viewpane, .pane, .pane-body, .split-view-view, .monaco-list, .monaco-scrollable-element) {
+  border-radius: calc(var(--x-radius) - 2px) !important;
+  overflow: hidden !important;
+  background-clip: padding-box !important;
+}
+
+/* Terminal (xterm) – evita esquinas cuadradas del área de texto */
+.monaco-workbench .part.panel :is(.terminal-outer-container, .terminal-inner-container, .xterm) {
+  border-radius: calc(var(--x-radius) - 2px) !important;
+  overflow: hidden !important;
+}
+
+/* Activity bar: contenido interno */
+.monaco-workbench .part.activitybar > .content,
+.monaco-workbench .part.activitybar :is(.monaco-scrollable-element, .monaco-action-bar) {
+  border-radius: calc(var(--x-radius) - 2px) !important;
+  overflow: hidden !important;
+}
+
+/* Editor – ya teníamos radios en título y editor; asegura scrollables/minimap */
+.monaco-workbench .editor-group-container > .editor-container,
+.monaco-editor,
+.monaco-editor-background,
+.monaco-editor .overflow-guard,
+.monaco-editor .monaco-scrollable-element,
+.monaco-editor .minimap,
+.monaco-editor .decorationsOverviewRuler {
+  border-radius: 0 0 var(--x-radius) var(--x-radius) !important;
+  overflow: hidden !important;
+  background-clip: padding-box !important;
+}
+
+/* Menú contextual y Quick Pick: interiores */
+.context-view .monaco-menu .monaco-scrollable-element,
+.monaco-quick-input-widget .quick-input-header,
+.monaco-quick-input-widget .monaco-list,
+.quick-input-widget .monaco-list,
+.quick-input-widget .monaco-scrollable-element {
+  border-radius: calc(var(--x-radius) - 2px) !important;
+  overflow: hidden !important;
+  background-clip: padding-box !important;
+}
+
+/* Status bar: contenedor de items */
+.monaco-workbench .part.statusbar .items-container {
+  border-radius: calc(var(--x-radius) - 4px) !important;
+  overflow: hidden !important;
+}
+
+
+
+/* Mac-style window control buttons (colored dots) */
+.monaco-workbench .part.titlebar .window-controls-container .window-control {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50% !important;
+  margin: 0 4px !important;
+  border: none !important;
+  background-size: 0 !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* Close button - Red dot */
+.monaco-workbench .part.titlebar .window-controls-container .window-control.window-close {
+  background: #ff5f57 !important;
+  background-image: none !important;
+}
+
+.monaco-workbench .part.titlebar .window-controls-container .window-control.window-close:hover {
+  background: #ff3b30 !important;
+}
+
+/* Maximize/Restore button - Green dot */
+.monaco-workbench .part.titlebar .window-controls-container .window-control.window-maximize,
+.monaco-workbench .part.titlebar .window-controls-container .window-control.window-unmaximize {
+  background: #28ca42 !important;
+  background-image: none !important;
+}
+
+.monaco-workbench .part.titlebar .window-controls-container .window-control.window-maximize:hover,
+.monaco-workbench .part.titlebar .window-controls-container .window-control.window-unmaximize:hover {
+  background: #1db954 !important;
+}
+
+/* Minimize button - Yellow dot */
+.monaco-workbench .part.titlebar .window-controls-container .window-control.window-minimize {
+  background: #ffbd2e !important;
+  background-image: none !important;
+}
+
+.monaco-workbench .part.titlebar .window-controls-container .window-control.window-minimize:hover {
+  background: #ff9500 !important;
+}
+
+/* Hide default icons and show symbols on hover */
+.monaco-workbench .part.titlebar .window-controls-container .window-control::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8px;
+  color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.monaco-workbench .part.titlebar .window-controls-container .window-control:hover::before {
+  opacity: 1;
+}
+
+.monaco-workbench .part.titlebar .window-controls-container .window-control.window-close:hover::before {
+  content: '×';
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.monaco-workbench .part.titlebar .window-controls-container .window-control.window-minimize:hover::before {
+  content: '−';
+  font-size: 8px;
+  font-weight: bold;
+}
+
+.monaco-workbench .part.titlebar .window-controls-container .window-control.window-maximize:hover::before,
+.monaco-workbench .part.titlebar .window-controls-container .window-control.window-unmaximize:hover::before {
+  content: '□';
+  font-size: 7px;
+  font-weight: bold;
+}
+
+/* Alternative selectors for different VSCode versions */
+.titlebar .window-controls-container .window-control,
+.window-controls-container .window-control {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50% !important;
+  margin: 0 4px !important;
+  border: none !important;
+  background-size: 0 !important;
+}
+
+.titlebar .window-controls-container .window-control.window-close,
+.window-controls-container .window-control.window-close {
+  background: #ff5f57 !important;
+  background-image: none !important;
+}
+
+.titlebar .window-controls-container .window-control.window-maximize,
+.titlebar .window-controls-container .window-control.window-unmaximize,
+.window-controls-container .window-control.window-maximize,
+.window-controls-container .window-control.window-unmaximize {
+  background: #28ca42 !important;
+  background-image: none !important;
+}
+
+.titlebar .window-controls-container .window-control.window-minimize,
+.window-controls-container .window-control.window-minimize {
+  background: #ffbd2e !important;
+  background-image: none !important;
+}
