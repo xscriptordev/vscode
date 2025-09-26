@@ -18,7 +18,9 @@ A comprehensive collection of carefully crafted themes for Visual Studio Code, d
 <p align="center">
   <img src="https://raw.githubusercontent.com/xscriptordev/vscode/refs/heads/main/themes/xscriptor-themes/screenshots/xtvsc05.jpg" width="900"/>
 </p>
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/xscriptordev/vscode/refs/heads/main/themes/xscriptor-themes/screenshots/xtvsc04.jpg" width="900"/>
+</p>
 
 
 
