@@ -3,6 +3,11 @@
 All important modifications to this VSCode theme collection will be documented in this file.
 
 ---
+
+## [1.0.1] - 2025-09-26
+- Add minimalist Product Icon Theme support (Dev)
+- Update documentation
+
 ## [1.0.0] - 2025-09-22
 - Big update, added new themes:
   - X Retro

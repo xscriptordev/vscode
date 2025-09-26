@@ -1,0 +1,149 @@
+{
+  "fonts": [
+    {
+      "id": "xscriptor-product-icons",
+      "src": [
+        {
+          "path": "./fonts/xscriptor-product-icons.woff",
+          "format": "woff"
+        }
+      ],
+      "weight": "normal",
+      "style": "normal"
+    }
+  ],
+  "iconDefinitions": {
+    "account": { 
+      "fontCharacter": "\\e001",
+      "fontId": "xscriptor-product-icons"
+    },
+    "add": { 
+      "fontCharacter": "\\e002",
+      "fontId": "xscriptor-product-icons"
+    },
+    "arrow-down": { 
+      "fontCharacter": "\\e003",
+      "fontId": "xscriptor-product-icons"
+    },
+    "arrow-left": { 
+      "fontCharacter": "\\e004",
+      "fontId": "xscriptor-product-icons"
+    },
+    "arrow-right": { 
+      "fontCharacter": "\\e005",
+      "fontId": "xscriptor-product-icons"
+    },
+    "arrow-up": { 
+      "fontCharacter": "\\e006",
+      "fontId": "xscriptor-product-icons"
+    },
+    "bookmark": { 
+      "fontCharacter": "\\e007",
+      "fontId": "xscriptor-product-icons"
+    },
+    "chevron-down": { 
+      "fontCharacter": "\\e008",
+      "fontId": "xscriptor-product-icons"
+    },
+    "chevron-left": { 
+      "fontCharacter": "\\e009",
+      "fontId": "xscriptor-product-icons"
+    },
+    "chevron-right": { 
+      "fontCharacter": "\\e00a",
+      "fontId": "xscriptor-product-icons"
+    },
+    "chevron-up": { 
+      "fontCharacter": "\\e00b",
+      "fontId": "xscriptor-product-icons"
+    },
+    "collapse-all": { 
+      "fontCharacter": "\\e00c",
+      "fontId": "xscriptor-product-icons"
+    },
+    "comment": { 
+      "fontCharacter": "\\e00d",
+      "fontId": "xscriptor-product-icons"
+    },
+    "debug-alt": { 
+      "fontCharacter": "\\e00e",
+      "fontId": "xscriptor-product-icons"
+    },
+    "debug-console": { 
+      "fontCharacter": "\\e00f",
+      "fontId": "xscriptor-product-icons"
+    },
+    "edit": { 
+      "fontCharacter": "\\e010",
+      "fontId": "xscriptor-product-icons"
+    },
+    "extensions": { 
+      "fontCharacter": "\\e011",
+      "fontId": "xscriptor-product-icons"
+    },
+    "feedback": { 
+      "fontCharacter": "\\e012",
+      "fontId": "xscriptor-product-icons"
+    },
+    "files": { 
+      "fontCharacter": "\\e013",
+      "fontId": "xscriptor-product-icons"
+    },
+    "git-branch": { 
+      "fontCharacter": "\\e014",
+      "fontId": "xscriptor-product-icons"
+    },
+    "git-merge": { 
+      "fontCharacter": "\\e015",
+      "fontId": "xscriptor-product-icons"
+    },
+    "git-pull-request": { 
+      "fontCharacter": "\\e016",
+      "fontId": "xscriptor-product-icons"
+    },
+    "notifications": { 
+      "fontCharacter": "\\e017",
+      "fontId": "xscriptor-product-icons"
+    },
+    "output": { 
+      "fontCharacter": "\\e018",
+      "fontId": "xscriptor-product-icons"
+    },
+    "problems": { 
+      "fontCharacter": "\\e019",
+      "fontId": "xscriptor-product-icons"
+    },
+    "refresh": { 
+      "fontCharacter": "\\e01a",
+      "fontId": "xscriptor-product-icons"
+    },
+    "run": { 
+      "fontCharacter": "\\e01b",
+      "fontId": "xscriptor-product-icons"
+    },
+    "search-view-icon": { 
+      "fontCharacter": "\\e01c",
+      "fontId": "xscriptor-product-icons"
+    },
+    "search": { 
+      "fontCharacter": "\\e01d",
+      "fontId": "xscriptor-product-icons"
+    },
+    "settings-gear": { 
+      "fontCharacter": "\\e01e",
+      "fontId": "xscriptor-product-icons"
+    },
+    "source-control": { 
+      "fontCharacter": "\\e01f",
+      "fontId": "xscriptor-product-icons"
+    },
+    "terminal": { 
+      "fontCharacter": "\\e020",
+      "fontId": "xscriptor-product-icons"
+    },
+    "trash": { 
+      "fontCharacter": "\\e021",
+      "fontId": "xscriptor-product-icons"
+    }
+  }
+}
