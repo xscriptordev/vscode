@@ -83,7 +83,7 @@ A comprehensive collection of carefully crafted themes for Visual Studio Code, d
 
 ### Method 1: From Terminal
 ```bash
-code --install-extension xscriptor-themes-1.0.0.vsix
+code --install-extension xscriptor-themes-1.0.1.vsix
 ```
 
 ### Method 3: Manual Installation
