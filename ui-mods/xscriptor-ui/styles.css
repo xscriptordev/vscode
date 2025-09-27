@@ -19,6 +19,9 @@
   --x-border-w: 1.6px;
   /* Grosor de borde específico para editor (más delgado) */
   --x-border-editor: 0.8px;
+
+  /* Grosor para las líneas con tapas redondeadas */
+  --x-stroke: var(--x-border-editor);
 }
 
 /* Gap uniforme desde el layout (sin márgenes en partes) */
@@ -125,14 +128,28 @@
     var(--x-shadow-soft) !important;
 }
 
-/* Franja de tabs con borde inferior lila y aire interno */
+/* Franja de tabs con línea inferior lila y extremos redondeados */
 .monaco-workbench .editor-group-container > .title.tabs {
+  position: relative !important;
   border: none !important;
   border-radius: var(--x-radius) var(--x-radius) 0 0 !important;
   padding: 2px 8px !important;
   box-sizing: border-box !important;
-  box-shadow: inset 0 -2px 0 var(--x-lila) !important;
+  box-shadow: none !important; /* sustituye al inset recto */
   -webkit-app-region: drag !important; /* zona drag */
+}
+.monaco-workbench .editor-group-container > .title.tabs::after {
+  content: "";
+  position: absolute;
+  left: 8px;                /* coincide con el padding lateral */
+  right: 8px;
+  bottom: 0;
+  height: var(--x-stroke);
+  background:
+    radial-gradient(closest-side, var(--x-lila) 99.9%, transparent) left   center / calc(var(--x-stroke)*2) 100% no-repeat,
+    radial-gradient(closest-side, var(--x-lila) 99.9%, transparent) right  center / calc(var(--x-stroke)*2) 100% no-repeat,
+    linear-gradient(var(--x-lila), var(--x-lila)) center / 100% 100% no-repeat;
+  pointer-events: none;
 }
 .monaco-workbench .tabs-container .tab,
 .monaco-workbench .title.tabs .actions-container,
@@ -192,14 +209,18 @@
 }
 .monaco-sash.vertical:hover::before { opacity: .7; }
 
-/* Línea lila al borde derecho de cada grupo, salvo el último */
+/* Línea lila al borde derecho de cada grupo, salvo el último (con “caps” redondos) */
 .monaco-workbench .editor-group-container:not(:last-of-type)::after {
   content: "";
   position: absolute;
-  top: 0; right: 0; width: 2px; height: 100%;
-  background: var(--x-lila);
-  opacity: .25;
-  border-radius: calc(var(--x-radius) / 2);
+  top: 0; right: 0;
+  width: var(--x-stroke);
+  height: 100%;
+  opacity: .45;
+  background:
+    radial-gradient(closest-side, var(--x-lila) 99.9%, transparent) center top    / 100% calc(var(--x-stroke)*2) no-repeat,
+    radial-gradient(closest-side, var(--x-lila) 99.9%, transparent) center bottom / 100% calc(var(--x-stroke)*2) no-repeat,
+    linear-gradient(var(--x-lila), var(--x-lila)) center / 100% 100% no-repeat;
   pointer-events: none;
 }
 
@@ -261,7 +282,6 @@
 body.maximized .titlebar,
 body.maximized .menubar { display: none !important; height: 0 !important; }
 
-
 /* =========================
    RADIOS INTERNOS (heredan y recortan bien)
    ========================= */
@@ -316,7 +336,7 @@ body.maximized .menubar { display: none !important; height: 0 !important; }
   overflow: hidden !important;
 }
 
-/* Editor – ya teníamos radios en título y editor; asegura scrollables/minimap */
+/* Editor – asegura scrollables/minimap con radios */
 .monaco-workbench .editor-group-container > .editor-container,
 .monaco-editor,
 .monaco-editor-background,
@@ -346,9 +366,10 @@ body.maximized .menubar { display: none !important; height: 0 !important; }
   overflow: hidden !important;
 }
 
+/* =========================
+   BOTONES TIPO MAC (opcionales)
+   ========================= */
 
-
-/* Mac-style window control buttons (colored dots) */
 .monaco-workbench .part.titlebar .window-controls-container .window-control {
   width: 12px !important;
   height: 12px !important;
@@ -365,7 +386,6 @@ body.maximized .menubar { display: none !important; height: 0 !important; }
   background: #ff5f57 !important;
   background-image: none !important;
 }
-
 .monaco-workbench .part.titlebar .window-controls-container .window-control.window-close:hover {
   background: #ff3b30 !important;
 }
@@ -376,7 +396,6 @@ body.maximized .menubar { display: none !important; height: 0 !important; }
   background: #28ca42 !important;
   background-image: none !important;
 }
-
 .monaco-workbench .part.titlebar .window-controls-container .window-control.window-maximize:hover,
 .monaco-workbench .part.titlebar .window-controls-container .window-control.window-unmaximize:hover {
   background: #1db954 !important;
@@ -387,7 +406,6 @@ body.maximized .menubar { display: none !important; height: 0 !important; }
   background: #ffbd2e !important;
   background-image: none !important;
 }
-
 .monaco-workbench .part.titlebar .window-controls-container .window-control.window-minimize:hover {
   background: #ff9500 !important;
 }
@@ -404,23 +422,19 @@ body.maximized .menubar { display: none !important; height: 0 !important; }
   opacity: 0;
   transition: opacity 0.2s ease;
 }
-
 .monaco-workbench .part.titlebar .window-controls-container .window-control:hover::before {
   opacity: 1;
 }
-
 .monaco-workbench .part.titlebar .window-controls-container .window-control.window-close:hover::before {
   content: '×';
   font-size: 10px;
   font-weight: bold;
 }
-
 .monaco-workbench .part.titlebar .window-controls-container .window-control.window-minimize:hover::before {
   content: '−';
   font-size: 8px;
   font-weight: bold;
 }
-
 .monaco-workbench .part.titlebar .window-controls-container .window-control.window-maximize:hover::before,
 .monaco-workbench .part.titlebar .window-controls-container .window-control.window-unmaximize:hover::before {
   content: '□';
@@ -428,7 +442,7 @@ body.maximized .menubar { display: none !important; height: 0 !important; }
   font-weight: bold;
 }
 
-/* Alternative selectors for different VSCode versions */
+/* Alternative selectors for diferentes versiones */
 .titlebar .window-controls-container .window-control,
 .window-controls-container .window-control {
   width: 12px !important;
@@ -438,13 +452,11 @@ body.maximized .menubar { display: none !important; height: 0 !important; }
   border: none !important;
   background-size: 0 !important;
 }
-
 .titlebar .window-controls-container .window-control.window-close,
 .window-controls-container .window-control.window-close {
   background: #ff5f57 !important;
   background-image: none !important;
 }
-
 .titlebar .window-controls-container .window-control.window-maximize,
 .titlebar .window-controls-container .window-control.window-unmaximize,
 .window-controls-container .window-control.window-maximize,
@@ -452,9 +464,10 @@ body.maximized .menubar { display: none !important; height: 0 !important; }
   background: #28ca42 !important;
   background-image: none !important;
 }
-
 .titlebar .window-controls-container .window-control.window-minimize,
 .window-controls-container .window-control.window-minimize {
   background: #ffbd2e !important;
   background-image: none !important;
 }
+
+

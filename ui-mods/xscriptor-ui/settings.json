@@ -1,0 +1,47 @@
+{
+  "glassit.alpha": 215,
+  "files.autoSave": "afterDelay",
+  "telemetry.feedback.enabled": false,
+  "telemetry.telemetryLevel": "off",
+  "terminal.integrated.suggest.enabled": true,
+  "editor.linkedEditing": true,
+  "editor.cursorBlinking": "expand",
+  "telemetry.editStats.enabled": false,
+
+  "custom-ui-style.electron": {},
+  "custom-ui-style.watch": true,
+
+  "custom-ui-style.external.imports": [
+    "file:///C:/Users/Xscriptor/.vscode/vscode-styles/rounded.css",
+    "file:///C:/Users/Xscriptor/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js",
+    "file:///C:/Users/Xscriptor/.vscode/vscode-styles/quickcenter.css",
+    "file:///C:/Users/Xscriptor/.vscode/vscode-styles/quickcenter.js"
+  ],
+
+  "zenMode.fullScreen": false,
+  "zenMode.centerLayout": true, // si lo pones en true, añade el asa de abajo sí o sí
+  "zenMode.hideActivityBar": true,
+  "zenMode.hideStatusBar": true,
+  "animations.Install-Method": "Custom UI Style",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "window.titleBarStyle": "custom",
+  "window.menuBarVisibility": "hidden",
+  "window.commandCenter": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.minimap.size": "fill",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairs": true,
+  "animations.CursorAnimation": true,
+  "editor.guides.bracketPairsHorizontal": true,
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
+  "workbench.panel.showLabels": false,
+  "explorer.compactFolders": false,
+  "workbench.colorTheme": "Dark Xscriptor",
+  "workbench.productIconTheme": "xscriptor-product-icons",
+  "workbench.iconTheme": "xscriptor-icons",
+  "editor.fontFamily": "JetBrains Mono, Cascadia Code, Fira Code, Consolas, 'Courier New', monospace",
+  "xglass.alpha": 200,
+  "zenMode.showTabs": "single"
+}
