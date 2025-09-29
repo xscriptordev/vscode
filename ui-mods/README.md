@@ -4,9 +4,20 @@ These mods modify the VS Code interface through JS and CSS injection.
 To install them, it is absolutely necessary to have the **Custom UI Style** extension installed.  
 
 *Previews*:
+
+- Xscriptor ui:
+
+<p align="center">
+  <img src="./xscriptor-ui/preview.png" width="700"/>
+</p>
+
+- XGrey ui
+
 <p align="center">
   <img src="./preview.png" width="700"/>
 </p>
+
+Here [Xscriptor-ui](./xscriptor-ui/README.md) You will find All the files needed for the Xscriptor ui customization.
 
 In the [styles](./styles) folder you will find the following files:
 
