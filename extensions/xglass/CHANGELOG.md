@@ -3,6 +3,9 @@
 All important modifications to this VSCode theme collection will be documented in this file.
 
 ---
+## [1.0.2]
+- update linux support
+
 ## [1.0.1]
 - Fixed package json, activation events was deleted following the standard
 - Added activation event onCommand:xglass.enable.

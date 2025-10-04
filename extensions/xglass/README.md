@@ -118,7 +118,7 @@ xprop -id <windowId> -f _NET_WM_WINDOW_OPACITY 32c \
 * **Scope:** Only adjusts **window attributes** (opacity) of the current VS Code process.
 * **Windows:** Loads a small **in-memory C# helper** via PowerShell (`Add-Type`). No additional files are written.
 * **Linux:** Uses `xprop` (X11 only). **Wayland not supported**.
-
+* **This extension deos not acces, modify, or interact with any process or window outside of the current VS Code instance.**
 ---
 
 ## Compatibility & Limitations
@@ -155,7 +155,7 @@ xprop -id <windowId> -f _NET_WM_WINDOW_OPACITY 32c \
 * From VSIX:
 
   ```bash
-  code --install-extension xglass-1.0.1.vsix
+  code --install-extension xglass-1.0.2.vsix
   ```
 * Or search **“XGlass”** in the Extensions view and install.
 

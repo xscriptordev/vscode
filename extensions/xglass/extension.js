@@ -44,48 +44,84 @@ function activate(context) {
       }
     };
   } else if (process.platform === 'linux') {
-    const cp = require('child_process');
+  const cp = require('child_process');
 
-    let codeWindowIds = [];
+  // Verifica xprop (X11). Si no está, deja un setAlpha que solo avisa.
+  try {
+    cp.spawnSync('which', ['xprop'], { stdio: 'ignore' });
+  } catch {
+    setAlpha = () => window.showErrorMessage('xglass Error: xprop not found (X11 only).');
+  }
+
+  // Opcional: aviso si estás en Wayland
+  if (process.env.XDG_SESSION_TYPE === 'wayland') {
+    console.warn('xglass: Wayland session detected — not supported.');
+  }
+
+  // Obtiene SIEMPRE las ventanas actuales de VS Code (code o code-insiders)
+  const getCodeWindowIds = () => {
     try {
-      cp.spawnSync('which', ['xprop'], { stdio: 'ignore' });
-
-      const processIds = cp.execSync(`pgrep 'code'`).toString().trim().split('\n').filter(Boolean);
-      const allWindowIdsOutput = cp.execSync(`xprop -root | grep '_NET_CLIENT_LIST(WINDOW)'`).toString();
-      const allWindowIds = (allWindowIdsOutput.match(/0x[\da-f]+/ig) || []);
-
-      for (const windowId of allWindowIds) {
-        const hasProcessId = cp.execSync(`xprop -id ${windowId} _NET_WM_PID`).toString();
-        if (!(hasProcessId.search('not found') + 1)) {
-          const winProcessId = hasProcessId.replace(/([a-zA-Z_()\\s=])/g, '');
-          if (processIds.includes(winProcessId)) codeWindowIds.push(windowId);
+      let pids = [];
+      try {
+        pids = cp.execSync(`pgrep -f 'code(-insiders)?$'`).toString().trim().split('\n').filter(Boolean);
+      } catch {
+        try {
+          pids = cp.execSync(`pgrep 'code'`).toString().trim().split('\n').filter(Boolean);
+        } catch {
+          pids = [];
         }
       }
+      if (!pids.length) return [];
 
-      setAlpha = (alpha) => {
-        if (alpha < 1) alpha = 1;
-        else if (alpha > 255) alpha = 255;
+      const root = cp.execSync(`xprop -root | grep '_NET_CLIENT_LIST(WINDOW)'`).toString();
+      const allIds = (root.match(/0x[\da-f]+/ig) || []);
+      const codeIds = [];
 
-        for (const id of codeWindowIds) {
-          cp.exec(
-            `xprop -id ${id} -f _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * ${alpha} / 255)))`,
-            async (error) => {
-              if (error) {
-                console.error(error);
-                window.showErrorMessage(`xglass Error (linux): ${error.message}`);
-                return;
-              }
-              console.log(`xglass: set alpha ${alpha}`);
-              await config().update('alpha', alpha, true);
-            }
-          );
-        }
-      };
+      for (const wid of allIds) {
+        const pidLine = cp.execSync(`xprop -id ${wid} _NET_WM_PID`).toString();
+        const m = pidLine.match(/\d+/);
+        const winPid = m ? m[0] : null;
+        if (winPid && pids.includes(winPid)) codeIds.push(wid);
+      }
+      return codeIds;
     } catch (e) {
-      console.error(e);
-      setAlpha = () => window.showErrorMessage('xglass Error: xprop / windows not available.');
+      console.error('xglass(linux): getCodeWindowIds failed', e);
+      return [];
     }
-  }
+  };
+
+  setAlpha = (alpha) => {
+    try {
+      if (alpha < 1) alpha = 1;
+      else if (alpha > 255) alpha = 255;
+
+      const ids = getCodeWindowIds();
+      if (!ids.length) {
+        window.showWarningMessage('xglass: no VS Code windows found (X11). Are you on Wayland?');
+        return;
+      }
+
+      for (const id of ids) {
+        cp.exec(
+          `xprop -id ${id} -f _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY $(printf 0x%x $((0xffffffff * ${alpha} / 255)))`,
+          async (error) => {
+            if (error) {
+              console.error('xglass(linux): xprop error', error);
+              window.showErrorMessage(`xglass Error (linux): ${error.message}`);
+              return;
+            }
+            console.log(`xglass(linux): set alpha ${alpha}`);
+            await config().update('alpha', alpha, true);
+          }
+        );
+      }
+    } catch (err) {
+      console.error(err);
+      window.showErrorMessage(`xglass Error (linux): ${err.message || err}`);
+    }
+  };
+}
+
 
   console.log('xglass VSC active');
 
