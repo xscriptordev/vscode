@@ -1,4 +1,4 @@
-# X Themes Collection — Visual Studio Code Theme Pack
+# Xscriptor Themes Collection — Visual Studio Code Theme Pack
 
 A comprehensive collection of carefully crafted themes for Visual Studio Code, designed to enhance your coding experience with diverse color palettes and visual styles. From minimalist dark themes to vibrant neon aesthetics, this pack offers something for every developer's preference.
 
@@ -119,4 +119,4 @@ This theme collection is released under the MIT License. See [LICENSE](./LICENSE
 **Xscriptor** — Theme Designer & Developer
 
 - GitHub: [@xscriptordev](https://github.com/xscriptordev)
-- Repository: [Xscriptor Themes](https://github.com/xscriptordev/vscode/themes/xscriptor-themes)
+- Repository: [Xscriptor Themes](https://github.com/xscriptordev/vscode/tree/main/themes/xscriptor-themes)
