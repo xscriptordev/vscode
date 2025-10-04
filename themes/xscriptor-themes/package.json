@@ -2,10 +2,10 @@
   "name": "xscriptor-themes",
   "displayName": "Xscriptor Themes",
   "description": "Collection of themes for Visual Studio Code by Xscriptor.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "publisher": "xscriptor",
   "license": "MIT",
-  "engines": { "vscode": "^1.70.0" },
+  "engines": { "vscode": "^1.85.0" },
   "extensionKind": ["ui"],
   "categories": ["Themes"],
   "keywords": ["theme", "dark", "light", "xscriptor", "colors", "icons", "greyscale"],
@@ -18,7 +18,7 @@
     "directory": "vscodethemes/xscriptorthemes"
   },
   "bugs": { "url": "https://github.com/xscriptordev/vscode/issues" },
-  "homepage": "https://github.com/xscriptordev/vscode/themes/xscriptor-themes",
+  "homepage": "https://github.com/xscriptordev/vscode/tree/main/themes/xscriptor-themes",
 
   "contributes": {
     "themes": [
@@ -67,9 +67,10 @@
 
   "files": [
     "themes/*.json",
-    "icons/*.svg",
-    "fonts/*.woff",
+    "icons/**/*.svg",
     "icons/*.json",
+    "fonts/*.woff",
+    "fonts/*.woff2",
     "image/icon.png",
     "README.md",
     "LICENSE"
