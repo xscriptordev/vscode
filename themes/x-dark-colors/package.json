@@ -1,0 +1,38 @@
+{
+  "name": "xdarkcolors",
+  "displayName": "X Dark Colors",
+  "description": "X Dark Colors Collection themes",
+  "version": "1.0.0",
+  "publisher": "xscriptor",
+  "license": "MIT",
+  "engines": { "vscode": "^1.85.0" },
+  "extensionKind": ["ui"],
+  "categories": ["Themes"],
+  "keywords": ["theme", "dark", "light", "xscriptor", "colors", "icons"],
+  "icon": "image/icon.png",
+  "galleryBanner": { "color": "#0D1117", "theme": "dark" },
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xscriptordev/vscode",
+    "directory": "vscodethemes/xdarkcolors"
+  },
+  "bugs": { "url": "https://github.com/xscriptordev/vscode/issues" },
+  "homepage": "https://github.com/xscriptordev/vscode/tree/main/themes/xscriptor-themes",
+
+  "contributes": {
+    "themes": [
+      { "label": "X Dark One", "uiTheme": "vs", "path": "./themes/x-dark-one.json" },
+      { "label": "X Dark Retro", "uiTheme": "vs", "path": "./themes/x-dark-retro.json" },
+      { "label": "X Dark Freeze", "uiTheme": "vs", "path": "./themes/x-dark-freeze.json" },
+      { "label": "X Dark Candy", "uiTheme": "vs", "path": "./themes/x-dark-candy.json" }
+    ]
+  },
+
+  "files": [
+    "themes/*.json",
+    "image/icon.png",
+    "README.md",
+    "LICENSE"
+  ]
+}
