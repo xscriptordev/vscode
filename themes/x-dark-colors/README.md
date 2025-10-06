@@ -99,7 +99,7 @@ Do you have suggestions or found an issue?
 
 ## License
 
-This project is under the MIT license. See the [LICENSE](LICENSE) file for more details.
+This project is under the MIT license. See the [LICENSE](https://github.com/xscriptordev/vscode/blob/main/themes/x-dark-colors/LICENSE) file for more details.
 
 ## Author
 
