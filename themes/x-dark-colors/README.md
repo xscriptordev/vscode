@@ -4,7 +4,6 @@ A set of 4 high-contrast dark themes optimized for use with transparency via the
 
 ## Preview:
 
-## Preview
 <p align="center">
   <img src="https://raw.githubusercontent.com/xscriptordev/vscode/refs/heads/main/themes/x-dark-colors/screenshots/preview01.png" width="900"/>
 </p>
