@@ -95,7 +95,7 @@ Do you have suggestions or found an issue?
 
 - [Report a bug](https://github.com/xscriptordev/vscode/issues)
 - [Suggest an improvement](https://github.com/xscriptordev/vscode/issues)
-- [View source code](https://github.com/xscriptordev/vscode/tree/main/vscodethemes/x-dark-colors)
+- [View source code](https://github.com/xscriptordev/vscode/tree/main/themes/x-dark-colors)
 
 ## License
 
