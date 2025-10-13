@@ -2,7 +2,7 @@
 
 <p align="center"> <img src="./assets/icon.png" width="200" alt="Xscriptor Theme Dark logo" /> </p>
 
-Essential settings and customizations to improve accessibility and personalization of Visual Studio Code using the Xscriptor ecosystem (themes, snippets, UI mods).
+Improve accessibility and personalization in Visual Studio Code with the Xscriptor ecosystem — themes, snippets, and UI mods.
 
 ## Structure
 
