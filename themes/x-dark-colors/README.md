@@ -106,4 +106,4 @@ This project is under the MIT license. See the [LICENSE](https://github.com/xscr
 
 ---
 
-*Optimized for Visual Studio Code with xglass transparency*
+*Optimized for Visual Studio Code with [xglass](https://marketplace.visualstudio.com/items?itemName=xscriptor.xglass) transparency*
