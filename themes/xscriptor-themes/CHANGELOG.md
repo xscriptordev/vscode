@@ -3,6 +3,11 @@
 All important modifications to this VSCode theme collection will be documented in this file.
 
 ---
+## [1.0.3] - 2025-10-16
+- Update docs
+- Update package.json 
+
+
 ## [1.0.2] - 2025-10-04 
 - Improve and update Product Icon Theme support (Dev)
 - Update documentation

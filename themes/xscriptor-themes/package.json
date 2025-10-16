@@ -2,7 +2,7 @@
   "name": "xscriptor-themes",
   "displayName": "Xscriptor Themes",
   "description": "Collection of themes for Visual Studio Code by Xscriptor.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "xscriptor",
   "license": "MIT",
   "engines": { "vscode": "^1.85.0" },
@@ -69,8 +69,7 @@
     "themes/*.json",
     "icons/**/*.svg",
     "icons/*.json",
-    "fonts/*.woff",
-    "fonts/*.woff2",
+    "icons/fonts/*.woff",
     "image/icon.png",
     "README.md",
     "LICENSE"
