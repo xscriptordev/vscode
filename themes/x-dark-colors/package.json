@@ -2,7 +2,7 @@
   "name": "x-dark-colors",
   "displayName": "X Dark Colors",
   "description": "X Dark Colors Collection themes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "xscriptor",
   "license": "MIT",
   "engines": { "vscode": "^1.85.0" },
