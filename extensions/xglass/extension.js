@@ -46,19 +46,19 @@ function activate(context) {
   } else if (process.platform === 'linux') {
   const cp = require('child_process');
 
-  // Verifica xprop (X11). Si no está, deja un setAlpha que solo avisa.
+  // Verify xprop (X11). .
   try {
     cp.spawnSync('which', ['xprop'], { stdio: 'ignore' });
   } catch {
     setAlpha = () => window.showErrorMessage('xglass Error: xprop not found (X11 only).');
   }
 
-  // Opcional: aviso si estás en Wayland
+  // show if is wayland
   if (process.env.XDG_SESSION_TYPE === 'wayland') {
     console.warn('xglass: Wayland session detected — not supported.');
   }
 
-  // Obtiene SIEMPRE las ventanas actuales de VS Code (code o code-insiders)
+  // obtain code window
   const getCodeWindowIds = () => {
     try {
       let pids = [];

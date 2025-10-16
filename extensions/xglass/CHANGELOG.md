@@ -4,6 +4,9 @@ All important modifications to this VSCode theme collection will be documented i
 
 ---
 ## [1.0.2]
+. Minimum update: documentation
+
+## [1.0.2]
 - update linux support
 
 ## [1.0.1]
