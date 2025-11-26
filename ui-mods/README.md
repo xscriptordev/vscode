@@ -11,10 +11,10 @@ To install them, it is absolutely necessary to have the **Custom UI Style** exte
   <img src="./xscriptor-ui/preview.png" width="700"/>
 </p>
 
-- XGrey ui
+- X-ui
 
 <p align="center">
-  <img src="./preview.png" width="700"/>
+  <img src="./x-ui//preview.png" width="700"/>
 </p>
 
 Here [Xscriptor-ui](./xscriptor-ui/README.md) You will find All the files needed for the Xscriptor ui customization.
