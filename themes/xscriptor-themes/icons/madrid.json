@@ -1,0 +1,231 @@
+{
+  "iconDefinitions": {
+    "file": {
+      "iconPath": "./madrid/file.svg"
+    },
+    "folder": {
+      "iconPath": "./madrid/folder.svg"
+    },
+    "jsx": {
+      "iconPath": "./madrid/jsx.svg"
+    },
+    "tsx": {
+      "iconPath": "./madrid/tsx.svg"
+    },
+    "mdx": {
+      "iconPath": "./madrid/mdx.svg"
+    },
+    "js": {
+      "iconPath": "./madrid/js.svg"
+    },
+    "ts": {
+      "iconPath": "./madrid/ts.svg"
+    },
+    "css": {
+      "iconPath": "./madrid/css.svg"
+    },
+    "html": {
+      "iconPath": "./madrid/html.svg"
+    },
+    "json": {
+      "iconPath": "./madrid/json.svg"
+    },
+    "python": {
+      "iconPath": "./madrid/python.svg"
+    },
+    "markdown": {
+      "iconPath": "./madrid/markdown.svg"
+    },
+    "image": {
+      "iconPath": "./madrid/image.svg"
+    },
+    "php": {
+      "iconPath": "./madrid/php.svg"
+    },
+    "java": {
+      "iconPath": "./madrid/java.svg"
+    },
+    "c": {
+      "iconPath": "./madrid/c.svg"
+    },
+    "cpp": {
+      "iconPath": "./madrid/cpp.svg"
+    },
+    "go": {
+      "iconPath": "./madrid/go.svg"
+    },
+    "rust": {
+      "iconPath": "./madrid/rust.svg"
+    },
+    "ruby": {
+      "iconPath": "./madrid/ruby.svg"
+    },
+    "elixir": {
+      "iconPath": "./madrid/elixir.svg"
+    },
+    "csharp": {
+      "iconPath": "./madrid/csharp.svg"
+    },
+    "kotlin": {
+      "iconPath": "./madrid/kotlin.svg"
+    },
+    "swift": {
+      "iconPath": "./madrid/swift.svg"
+    },
+    "sql": {
+      "iconPath": "./madrid/sql.svg"
+    },
+    "bash": {
+      "iconPath": "./madrid/bash.svg"
+    },
+    "dart": {
+      "iconPath": "./madrid/dart.svg"
+    },
+    "scala": {
+      "iconPath": "./madrid/scala.svg"
+    },
+    "perl": {
+      "iconPath": "./madrid/perl.svg"
+    },
+    "objectivec": {
+      "iconPath": "./madrid/objectivec.svg"
+    },
+    "r": {
+      "iconPath": "./madrid/r.svg"
+    },
+    "matlab": {
+      "iconPath": "./madrid/matlab.svg"
+    },
+    "haskell": {
+      "iconPath": "./madrid/haskell.svg"
+    },
+    "terminal": {
+      "iconPath": "./madrid/terminal.svg"
+    },
+    "yaml": {
+      "iconPath": "./madrid/yaml.svg"
+    },
+    "docker": {
+      "iconPath": "./madrid/docker.svg"
+    },
+    "powershell": {
+      "iconPath": "./madrid/powershell.svg"
+    },
+    "lua": {
+      "iconPath": "./madrid/lua.svg"
+    },
+    "cobol": {
+      "iconPath": "./madrid/cobol.svg"
+    },
+    "conf": {
+      "iconPath": "./madrid/conf.svg"
+    }
+  },
+  "file": "file",
+  "folder": "folder",
+  "fileExtensions": {
+    "jsx": "jsx",
+    "tsx": "tsx",
+    "mdx": "mdx",
+    "js": "js",
+    "ts": "ts",
+    "css": "css",
+    "html": "html",
+    "htm": "html",
+    "json": "json",
+    "py": "python",
+    "md": "markdown",
+    "markdown": "markdown",
+    "png": "image",
+    "jpg": "image",
+    "jpeg": "image",
+    "gif": "image",
+    "svg": "image",
+    "webp": "image",
+    "bmp": "image",
+    "ico": "image",
+    "php": "php",
+    "java": "java",
+    "c": "c",
+    "cpp": "cpp",
+    "cc": "cpp",
+    "cxx": "cpp",
+    "h": "c",
+    "hpp": "cpp",
+    "go": "go",
+    "rs": "rust",
+    "rb": "ruby",
+    "tiff": "image",
+    "tif": "image",
+    "raw": "image",
+    "psd": "image",
+    "ai": "image",
+    "eps": "image",
+    "pdf": "image",
+    "sketch": "image",
+    "fig": "image",
+    "xd": "image",
+    "heic": "image",
+    "heif": "image",
+    "avif": "image",
+    "cs": "csharp",
+    "kt": "kotlin",
+    "kts": "kotlin",
+    "swift": "swift",
+    "sql": "sql",
+    "sh": "terminal",
+    "bash": "bash",
+    "zsh": "bash",
+    "fish": "bash",
+    "dart": "dart",
+    "scala": "scala",
+    "sc": "scala",
+    "pl": "perl",
+    "pm": "perl",
+    "m": "objectivec",
+    "mm": "objectivec",
+    "r": "r",
+    "mat": "matlab",
+    "hs": "haskell",
+    "lhs": "haskell",
+    "ex": "elixir",
+    "exs": "elixir",
+    "ps1": "terminal",
+    "yml": "json",
+    "yaml": "json",
+    "toml": "json",
+    "ini": "json",
+    "env": "json",
+    "txt": "markdown",
+    "rst": "markdown",
+    "adoc": "markdown",
+    "xml": "json",
+    "csv": "json",
+    "tsv": "json",
+    "jsonl": "json",
+    "yml": "yaml",
+    "yaml": "yaml",
+    "dockerfile": "docker",
+    "ps1": "powershell",
+    "psm1": "powershell",
+    "psd1": "powershell",
+    "lua": "lua",
+    "cob": "cobol",
+    "cbl": "cobol",
+    "conf": "terminal",
+    "config": "terminal",
+    "cfg": "terminal"
+  },
+  "fileNames": {
+    "package.json": "json",
+    "tsconfig.json": "json",
+    "README.md": "markdown",
+    "index.html": "html",
+    "index.js": "js",
+    "index.ts": "ts",
+    "Dockerfile": "docker",
+    "docker-compose.yml": "docker",
+    "docker-compose.yaml": "docker",
+    ".dockerignore": "docker"
+  }
+}

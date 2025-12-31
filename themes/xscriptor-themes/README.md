@@ -1,8 +1,9 @@
-# Xscriptor Themes Collection — Visual Studio Code Theme Pack
+<h1 align="center"> Xscriptor Themes Collection — Visual Studio Code Theme Pack</h1>
 
-A comprehensive collection of carefully crafted themes for Visual Studio Code, designed to enhance your coding experience with diverse color palettes and visual styles. From minimalist dark themes to vibrant neon aesthetics, this pack offers something for every developer's preference.
+Travel through your code with a global aesthetic. From the neon lights of Tokio and the warmth of La Habana to the sleek minimalism of Oslo and Helsinki. A premium pack of 11+ unique themes and custom icons for a truly personalized workspace.
 
-## Preview
+## Previews
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/xscriptordev/vscode/refs/heads/main/themes/xscriptor-themes/screenshots/xtvsc01.jpg" width="900"/>
 </p>
@@ -26,9 +27,9 @@ A comprehensive collection of carefully crafted themes for Visual Studio Code, d
 
 ---
 
-## Featured Theme: Xscriptor Theme
+## Featured Theme: X
 
-**Xscriptor Theme** is the flagship theme of this collection, offering the perfect balance of warmth and darkness for extended coding sessions. With its ultra-dark background and carefully selected warm accent colors, it provides exceptional readability while maintaining visual appeal.
+**X** is the flagship theme of this collection, offering the perfect balance of warmth and darkness for extended coding sessions. With its ultra-dark background and carefully selected warm accent colors, it provides exceptional readability while maintaining visual appeal.
 
 ---
 
@@ -36,17 +37,26 @@ A comprehensive collection of carefully crafted themes for Visual Studio Code, d
 
 ### Icons
 
-**Xscriptor Icons** - The original icon theme with colorful file and folder icons.
+**X** - Core icon theme with distinctive 'X' branding.
+**Madrid** - Icon theme aligned with the Madrid light palette.
+**Oslo** - Icon theme aligned with the Oslo palette.
+**XOslo** - 'X' styled icons using the Oslo palette.
 
-**Xscriptor Greyscale Icons** - A grayscale version of the Xscriptor Icons theme for a more subdued look.
+#### Enable Icons
+- Open Command Palette (Cmd+Shift+P or Ctrl+Shift+P)
+- Choose "Preferences: File Icon Theme"
+- Select any Xscriptor icon theme (e.g., Xscriptor Icons)
+- Or add in settings.json:
 
-**X Icons** - A new icon theme featuring distinctive icons with an 'X' mark in the center. Each icon uses the characteristic color of its corresponding language or file type, providing excellent visual distinction while maintaining a cohesive look.
-
-**X Greyscale Icons** - A grayscale version of the X Icons theme for a more subdued look.
+```json
+{
+  "workbench.iconTheme": "xscriptor-icons"
+}
+```
 
 ### Dark Themes
 
-**Xscriptor Theme** — *Main theme - Ultra-dark warm evening palette*
+**X** — *Main theme - Ultra-dark warm evening palette*
 - **Type:** Dark (Main Theme)
 - **Background:** Ultra-dark charcoal (#0A0A0A) - Enhanced for deeper immersion
 - **Highlights:** Warm yellow (#FCE566), coral (#FC618D), mint (#7BD88F), sky blue (#5AD4E6), purple (#948AE3)
@@ -59,18 +69,19 @@ A comprehensive collection of carefully crafted themes for Visual Studio Code, d
 
 ---
 
-**X Dark Colors** — *Minimalist dark with colored accents*
-**X Dark Summer Night** — *Warm evening palette*
-**X Dark Nord** — *Arctic-inspired cool tones*
-**X Dark Greyscale** — *Pure monochrome elegance*
-**X Dark Sense** — *Dark theme with purple accents*
-**X Dark Persecution** — *Dark theme with redish accents*
+**Praha** — *Minimalist dark with colored accents*
+**Tokio** — *Warm evening palette*
+**Oslo** — *Arctic-inspired cool tones*
+**Berlin** — *Pure monochrome elegance*
+**Paris** — *Dark theme with purple accents*
+**Bogotá** — *Dark theme with reddish accents*
+**Lahabana** — *Retro-inspired palette*
 
 ### Light Themes
 
-**Xscriptor Light** — *Main theme inverted*
-**X Light Nord Inverted** — *Light Nordic aesthetic*
-**X Light Greyscale Inverted** — *Light monochrome*
+**Madrid** — *Main theme inverted*
+**Helsinki** — *Light Nordic aesthetic*
+**London** — *Light monochrome*
 
 ---
 
@@ -83,7 +94,7 @@ A comprehensive collection of carefully crafted themes for Visual Studio Code, d
 
 ### Method 1: From Terminal
 ```bash
-code --install-extension xscriptor-themes-1.0.3.vsix
+code --install-extension xscriptor-themes-1.0.8.vsix
 ```
 
 ### Method 3: Manual Installation
@@ -112,11 +123,18 @@ Feedback and suggestions are welcome! If you encounter any issues or have ideas 
 
 This theme collection is released under the MIT License. See [LICENSE](./LICENSE) for details.
 
+
+---
+
+## References:
+
+- [Xscriptor Color Scheme](./references.md)
+
 ---
 
 ## Author
 
 **Xscriptor** — Theme Designer & Developer
 
-- GitHub: [@xscriptordev](https://github.com/xscriptordev)
+- GitHub: [@xscriptordev](https://github.com/xscriptor)
 - Repository: [Xscriptor Themes](https://github.com/xscriptordev/vscode/tree/main/themes/xscriptor-themes)

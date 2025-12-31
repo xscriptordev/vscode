@@ -2,58 +2,58 @@
   "name": "xscriptor-themes",
   "displayName": "Xscriptor Themes",
   "description": "Collection of themes for Visual Studio Code by Xscriptor.",
-  "version": "1.0.3",
+  "version": "1.0.8",
   "publisher": "xscriptor",
   "license": "MIT",
   "engines": { "vscode": "^1.85.0" },
   "extensionKind": ["ui"],
   "categories": ["Themes"],
-  "keywords": ["theme", "dark", "light", "xscriptor", "colors", "icons", "greyscale"],
+  "keywords": ["theme", "dark", "light", "xscriptor", "colors", "icons", "icon-theme"],
   "icon": "image/icon.png",
   "galleryBanner": { "color": "#0D1117", "theme": "dark" },
 
   "repository": {
     "type": "git",
     "url": "https://github.com/xscriptordev/vscode",
-    "directory": "vscodethemes/xscriptorthemes"
+    "directory": "themes/xscriptor-themes"
   },
   "bugs": { "url": "https://github.com/xscriptordev/vscode/issues" },
   "homepage": "https://github.com/xscriptordev/vscode/tree/main/themes/xscriptor-themes",
 
   "contributes": {
     "themes": [
-      { "label": "Dark Xscriptor",            "uiTheme": "vs-dark",  "path": "./themes/xscriptor-theme.json" },
-      { "label": "Xscriptor Light", "uiTheme": "vs", "path": "./themes/xscriptor-theme-inverted.json" },
-      { "label": "X Dark Colors",        "uiTheme": "vs-dark",  "path": "./themes/xdarkcolors.json" },
-      { "label": "X Dark Greyscale",          "uiTheme": "vs-dark",  "path": "./themes/xgreyscale.json" },
-      { "label": "X Light Greyscale Inverted", "uiTheme": "vs", "path": "./themes/xgreyscaleinverted.json" },
-      { "label": "X Dark Nord",               "uiTheme": "vs-dark",  "path": "./themes/xnord.json" },
-      { "label": "X Light Nord Inverted",      "uiTheme": "vs", "path": "./themes/xnordinverted.json" },
-      { "label": "X Dark Summer Night",       "uiTheme": "vs-dark",  "path": "./themes/xsummernight.json" },
-      { "label": "X Dark Retro",       "uiTheme": "vs-dark",  "path": "./themes/xretro.json" },
-      { "label": "X Dark Sense",       "uiTheme": "vs-dark",  "path": "./themes/xsense.json" },
-      { "label": "X Dark Persecution",       "uiTheme": "vs-dark",  "path": "./themes/xpersecution.json" }
+      { "label": "X",            "uiTheme": "vs-dark",  "path": "./themes/x.json" },
+      { "label": "Madrid", "uiTheme": "vs", "path": "./themes/madrid.json" },
+      { "label": "Praha",        "uiTheme": "vs-dark",  "path": "./themes/praha.json" },
+      { "label": "Berlin",          "uiTheme": "vs-dark",  "path": "./themes/berlin.json" },
+      { "label": "London", "uiTheme": "vs", "path": "./themes/london.json" },
+      { "label": "Oslo",               "uiTheme": "vs-dark",  "path": "./themes/oslo.json" },
+      { "label": "Helsinki",      "uiTheme": "vs", "path": "./themes/helsinki.json" },
+      { "label": "Tokio",       "uiTheme": "vs-dark",  "path": "./themes/tokio.json" },
+      { "label": "Lahabana",       "uiTheme": "vs-dark",  "path": "./themes/lahabana.json" },
+      { "label": "Paris",       "uiTheme": "vs-dark",  "path": "./themes/paris.json" },
+      { "label": "Bogotá",       "uiTheme": "vs-dark",  "path": "./themes/bogota.json" }
     ],
     "iconThemes": [
       {
+        "id": "madrid-icons",
+        "label": "Madrid",
+        "path": "./icons/madrid.json"
+      },
+      {
+        "id": "oslo-icons",
+        "label": "Oslo",
+        "path": "./icons/oslo.json"
+      },
+      {
         "id": "x-icons",
-        "label": "X Icons",
-        "path": "./icons/x-icons.json"
+        "label": "X",
+        "path": "./icons/x.json"
       },
       {
-        "id": "x-greyscale-icons",
-        "label": "X Greyscale Icons",
-        "path": "./icons/x-greyscale-icons.json"
-      },
-      {
-        "id": "xscriptor-icons",
-        "label": "Xscriptor Icons",
-        "path": "./icons/xscriptor-icons.json"
-      },
-      {
-        "id": "xscriptor-greyscale-icons",
-        "label": "Xscriptor Greyscale Icons",
-        "path": "./icons/xscriptor-greyscale-icons.json"
+        "id": "xoslo-icons",
+        "label": "XOslo",
+        "path": "./icons/xoslo.json"
       }
     ],
     "productIconThemes": [

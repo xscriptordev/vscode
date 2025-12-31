@@ -3,9 +3,15 @@
 All important modifications to this VSCode theme collection will be documented in this file.
 
 ---
+## [1.0.8] - 2025-10-20
+- Update docs.
+- Update package.json.
+- Add icons.
+- Refactor: Improved file structure and renamed files for better consistency across the collection.
+
 ## [1.0.3] - 2025-10-16
-- Update docs
-- Update package.json 
+- Update docs.
+- Update package.json.
 
 
 ## [1.0.2] - 2025-10-04 
