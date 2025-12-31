@@ -128,7 +128,7 @@ This theme collection is released under the MIT License. See [LICENSE](./LICENSE
 
 ## References:
 
-- [Xscriptor Color Scheme](./references.md)
+- [Xscriptor Schemes](./references.md)
 
 ---
 
