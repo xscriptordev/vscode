@@ -1,4 +1,4 @@
-# Xscriptor VSCode
+<h1 align="center">VSCode Xscriptor</h1>
 
 <p align="center"><img src="./assets/icon.png" width="200" alt="Xscriptor logo" /></p>
 
