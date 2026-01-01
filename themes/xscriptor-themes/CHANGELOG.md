@@ -3,7 +3,7 @@
 All important modifications to this VSCode theme collection will be documented in this file.
 
 ---
-## [1.0.8] - 2025-10-20
+## [1.0.8] - 2025-12-31
 - Update docs.
 - Update package.json.
 - Add icons.
