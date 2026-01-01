@@ -128,7 +128,7 @@ This theme collection is released under the MIT License. See [LICENSE](./LICENSE
 
 ## References:
 
-- [Xscriptor Schemes](./references.md)
+- [Xscriptor Schemes](https://github.com/xscriptordev/vscode/blob/main/themes/xscriptor-themes/references.md)
 
 ---
 
