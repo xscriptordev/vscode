@@ -1,6 +1,6 @@
-# X Dark Colors — High-Contrast Theme Collection for VS Code
+<h1 align="center">X Dark Colors — Theme Collection for VS Code</h1>
 
-A set of 4 high-contrast dark themes optimized for use with transparency via the xglass extension. Crisp, readable colors with no “washout” on a #000000 background.
+<p align="center">A versatile collection of dark themes for VS Code, designed to look great with transparency using the xglass extension. This pack includes the original high-contrast Core Collection and the new, colorful City Collection. Expect crisp text and clear readability on a pure black</p>
 
 ## Preview:
 
@@ -25,25 +25,41 @@ A set of 4 high-contrast dark themes optimized for use with transparency via the
 
 ## Included Themes
 
-### X Dark One
-- **Main Color**: Bright yellow (#FFE900)
-- **Features**: Modern theme with vibrant yellow accents
-- **Ideal for**: General development, maximum UI element visibility
+### Core Collection
+- **X Milán** (formerly X Dark One) - Bright yellow accents
+- **X Almería** (formerly X Dark Retro) - Lime green/Retro style
+- **X Frankfurt** (formerly X Dark Freeze) - Ice blue tones
+- **X Medellín** (formerly X Dark Candy) - Sweet orange/Vibrant
 
-### X Dark Retro  
-- **Main Color**: Lime green (#F9FF75)
-- **Features**: Retro style with nostalgic touches
-- **Ideal for**: Long programming sessions, relaxed environment
-
-### X Dark Freeze
-- **Main Color**: Ice blue (#76CCE0)
-- **Features**: Cool and elegant theme with blue tones
-- **Ideal for**: Night work, professional environment
-
-### X Dark Candy
-- **Main Color**: Sweet orange (#FFD84C)
-- **Features**: Vibrant and energetic colors
-- **Ideal for**: Creative projects, dynamic environment
+### City Collection (Global)
+- **X Kyoto** (Blue)
+- **X Marrakech** (Red/Orange)
+- **X Reykjavik** (Teal)
+- **X Cairo** (Gold)
+- **X Rio** (Green & Pink)
+- **X Athens** (Blue & Orange)
+- **X Istanbul** (Purple & Yellow)
+- **X Sidney** (Teal & Coral)
+- **X Nice** (Rose Gold & Slate)
+- **X Liverpool** (Grey & Red)
+- **X Barcelona** (Azure & Yellow)
+- **X Rome** (Purple & Gold)
+- **X Múnich** (Neon Green & Black)
+- **X Vienna** (Burgundy & Cream)
+- **X Stockholm** (Nordic Blue & Yellow)
+- **X Stavanger** (Deep Blue & Frost)
+- **X Tampere** (Green & Purple)
+- **X Moscow** (Red & Gold)
+- **X Dubai** (Black & Gold)
+- **X Osaka** (Neon Pink & Cyan)
+- **X Seoul** (Red & Blue)
+- **X Mumbai** (Orange & Teal)
+- **X Bangkok** (Purple & Orange)
+- **X Singapore** (Green & White)
+- **X New York** (Slate & Taxi Yellow)
+- **X Chicago** (Steel Blue & Grey)
+- **X San Francisco** (International Orange & Fog)
+- **X Toronto** (Red & White)
 
 ## Key Features
 
@@ -72,11 +88,7 @@ A set of 4 high-contrast dark themes optimized for use with transparency via the
 1. **Install the xglass extension** (recommended for better experience)
 2. Open Command Palette (`Ctrl+Shift+P`)
 3. Type "Preferences: Color Theme"
-4. Select one of the X Dark themes:
-   - X Dark One
-   - X Dark Retro  
-   - X Dark Freeze
-   - X Dark Candy
+4. Select one of the X Dark themes (e.g., **X Milán**, **X Kyoto**, **X New York**, etc.)
 
 ## Optimized for xglass
 

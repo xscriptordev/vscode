@@ -2,33 +2,204 @@
   "name": "x-dark-colors",
   "displayName": "X Dark Colors",
   "description": "X Dark Colors Collection themes",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "publisher": "xscriptor",
   "license": "MIT",
-  "engines": { "vscode": "^1.85.0" },
-  "extensionKind": ["ui"],
-  "categories": ["Themes"],
-  "keywords": ["theme", "dark", "light", "xscriptor", "colors", "icons"],
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "extensionKind": [
+    "ui"
+  ],
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "light",
+    "xscriptor",
+    "colors",
+    "icons"
+  ],
   "icon": "image/icon.png",
-  "galleryBanner": { "color": "#0D1117", "theme": "dark" },
-
+  "galleryBanner": {
+    "color": "#0D1117",
+    "theme": "dark"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/xscriptordev/vscode",
     "directory": "vscodethemes/xdarkcolors"
   },
-  "bugs": { "url": "https://github.com/xscriptordev/vscode/issues" },
+  "bugs": {
+    "url": "https://github.com/xscriptordev/vscode/issues"
+  },
   "homepage": "https://github.com/xscriptordev/vscode/tree/main/themes/x-dark-colors",
-
   "contributes": {
     "themes": [
-      { "label": "X Dark One", "uiTheme": "vs", "path": "./themes/x-dark-one.json" },
-      { "label": "X Dark Retro", "uiTheme": "vs", "path": "./themes/x-dark-retro.json" },
-      { "label": "X Dark Freeze", "uiTheme": "vs", "path": "./themes/x-dark-freeze.json" },
-      { "label": "X Dark Candy", "uiTheme": "vs", "path": "./themes/x-dark-candy.json" }
+      {
+        "label": "X Milán",
+        "uiTheme": "vs",
+        "path": "./themes/x-milan.json"
+      },
+      {
+        "label": "X Almería",
+        "uiTheme": "vs",
+        "path": "./themes/x-almeria.json"
+      },
+      {
+        "label": "X Frankfurt",
+        "uiTheme": "vs",
+        "path": "./themes/x-frankfurt.json"
+      },
+      {
+        "label": "X Medellín",
+        "uiTheme": "vs",
+        "path": "./themes/x-medellin.json"
+      },
+      {
+        "label": "X Kyoto",
+        "uiTheme": "vs",
+        "path": "./themes/x-kyoto.json"
+      },
+      {
+        "label": "X Marrakech",
+        "uiTheme": "vs",
+        "path": "./themes/x-marrakech.json"
+      },
+      {
+        "label": "X Reykjavik",
+        "uiTheme": "vs",
+        "path": "./themes/x-reykjavik.json"
+      },
+      {
+        "label": "X Cairo",
+        "uiTheme": "vs",
+        "path": "./themes/x-cairo.json"
+      },
+      {
+        "label": "X Rio",
+        "uiTheme": "vs",
+        "path": "./themes/x-rio.json"
+      },
+      {
+        "label": "X Athens",
+        "uiTheme": "vs",
+        "path": "./themes/x-athens.json"
+      },
+      {
+        "label": "X Istanbul",
+        "uiTheme": "vs",
+        "path": "./themes/x-istanbul.json"
+      },
+      {
+        "label": "X Sidney",
+        "uiTheme": "vs",
+        "path": "./themes/x-sidney.json"
+      },
+      {
+        "label": "X Nice",
+        "uiTheme": "vs",
+        "path": "./themes/x-nice.json"
+      },
+      {
+        "label": "X Liverpool",
+        "uiTheme": "vs",
+        "path": "./themes/x-liverpool.json"
+      },
+      {
+        "label": "X Barcelona",
+        "uiTheme": "vs",
+        "path": "./themes/x-barcelona.json"
+      },
+      {
+        "label": "X Rome",
+        "uiTheme": "vs",
+        "path": "./themes/x-rome.json"
+      },
+      {
+        "label": "X Múnich",
+        "uiTheme": "vs",
+        "path": "./themes/x-munich.json"
+      },
+      {
+        "label": "X Vienna",
+        "uiTheme": "vs",
+        "path": "./themes/x-vienna.json"
+      },
+      {
+        "label": "X Stockholm",
+        "uiTheme": "vs",
+        "path": "./themes/x-stockholm.json"
+      },
+      {
+        "label": "X Stavanger",
+        "uiTheme": "vs",
+        "path": "./themes/x-stavanger.json"
+      },
+      {
+        "label": "X Tampere",
+        "uiTheme": "vs",
+        "path": "./themes/x-tampere.json"
+      },
+      {
+        "label": "X Moscow",
+        "uiTheme": "vs",
+        "path": "./themes/x-moscow.json"
+      },
+      {
+        "label": "X Dubai",
+        "uiTheme": "vs",
+        "path": "./themes/x-dubai.json"
+      },
+      {
+        "label": "X Osaka",
+        "uiTheme": "vs",
+        "path": "./themes/x-osaka.json"
+      },
+      {
+        "label": "X Seoul",
+        "uiTheme": "vs",
+        "path": "./themes/x-seoul.json"
+      },
+      {
+        "label": "X Mumbai",
+        "uiTheme": "vs",
+        "path": "./themes/x-mumbai.json"
+      },
+      {
+        "label": "X Bangkok",
+        "uiTheme": "vs",
+        "path": "./themes/x-bangkok.json"
+      },
+      {
+        "label": "X Singapore",
+        "uiTheme": "vs",
+        "path": "./themes/x-singapore.json"
+      },
+      {
+        "label": "X New York",
+        "uiTheme": "vs",
+        "path": "./themes/x-new-york.json"
+      },
+      {
+        "label": "X Chicago",
+        "uiTheme": "vs",
+        "path": "./themes/x-chicago.json"
+      },
+      {
+        "label": "X San Francisco",
+        "uiTheme": "vs",
+        "path": "./themes/x-san-francisco.json"
+      },
+      {
+        "label": "X Toronto",
+        "uiTheme": "vs",
+        "path": "./themes/x-toronto.json"
+      }
     ]
   },
-
   "files": [
     "themes/*.json",
     "image/icon.png",
