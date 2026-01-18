@@ -1,6 +1,6 @@
 # Schemes
 
-## X Dark Candy -> Medellín
+## Medellín
 
 ```json
 {
@@ -23,7 +23,7 @@
 }
 ```
 
-## X Dark Freeze -> Frankfurt
+## Frankfurt
 
 ```json
 {
@@ -46,7 +46,7 @@
 }
 ```
 
-## X Dark One -> Milán
+## Milán
 
 ```json
 {
@@ -69,7 +69,7 @@
 }
 ```
 
-## X Dark Retro -> Almería
+## Almería
 
 ```json
 {
