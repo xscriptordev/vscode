@@ -1,8 +1,17 @@
 <h1 align="center">VSCode Xscriptor</h1>
 
-<p align="center"><img src="./assets/icon.png" width="200" alt="Xscriptor logo" /></p>
+<div align="center"> 
+
+![antigravity](https://xscriptordev.github.io/badges/ide/antigravity.svg) ![cursor](https://xscriptordev.github.io/badges/editors/cursor.svg) ![code-oss](https://xscriptordev.github.io/badges/editors/code-oss.svg) ![trae](https://xscriptordev.github.io/badges/ide/trae-ai.svg) ![vscode](https://xscriptordev.github.io/badges/editors/vscode.svg) ![vscodium](https://xscriptordev.github.io/badges/editors/vscodium.svg) ![mit](https://xscriptordev.github.io/badges/licenses/mit.svg) ![css](https://xscriptordev.github.io/badges/languages/css.svg) ![javascript](https://xscriptordev.github.io/badges/languages/javascript.svg) ![c#](https://xscriptordev.github.io/badges/languages/csharp.svg)
+
 
 Improve accessibility and customization in Visual Studio Code with the Xscriptor ecosystem — themes, icons, snippets, and lightweight UI tweaks.
+
+</div>
+
+<p align="center"><img src="./assets/icon.png" width="100" alt="Xscriptor logo" /></p>
+
+
 
 ## Structure
 
